@@ -88,5 +88,7 @@ public class Main {
         System.out.println("TOTAL: " + cliente.calculaTotalCompra() + " R$");
 
         scanner1.close();
+        scanner2.close();
+        scanner3.close();
     }
 }
