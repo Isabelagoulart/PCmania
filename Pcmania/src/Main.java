@@ -86,5 +86,7 @@ public class Main {
             pc3.mostraPCConfigs();
         }
         System.out.println("TOTAL: " + cliente.calculaTotalCompra() + " R$");
+
+        scanner1.close();
     }
 }
