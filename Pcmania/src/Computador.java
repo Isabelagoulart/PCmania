@@ -1,18 +1,19 @@
 public class Computador {
     //Atributos
-    public String marca;
-    public float preco;
+    public String marca; // marca do computador
+    public float preco; // preço do computador
     public String brinde;
 
-    SistemaOperacional so;
-    HardwareBasico[] hb;
-    Cliente cliente;
-    MemoriaUSB usb;
+    SistemaOperacional so; // objeto associado ao computador
+    HardwareBasico[] hb; // array de objetos que representa os componentes básicos do pc
+    Cliente cliente; // objeto que represneta o cliente que comprou o pc
+    MemoriaUSB usb; // objeto representa uma memoria usb associada ao pc
 
     //Construtor
     public Computador(int promocao){
         this.hb = new  HardwareBasico[3];
 
+        // configura o pc de acordo com a promoção recebida como parâmetro
         if(promocao == 1){
             this.marca = "Positivo";
             this.preco = 3300.00f;
