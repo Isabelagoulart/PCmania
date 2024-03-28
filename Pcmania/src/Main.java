@@ -1,3 +1,5 @@
+//dupla: Isabela Pereira Goulart e Mariana Helena Cunha Bochi
+
 import java.util.Scanner;
 
 public class Main {
