@@ -2,15 +2,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int promocao;
-        int compras = 0;
-        String nome_cliente;
-        long cpf_cliente;
+        int promocao; // armazena a escolha da promoção
+        int compras = 0; // rastreia o número de compras feitas
+        String nome_cliente; // armazena nome do cliente
+        long cpf_cliente; // armazena CPF do cliente
+        // armazenam instâncias de memoria usb com diferentes capacidades
         MemoriaUSB usb32;
         MemoriaUSB usb16;
         MemoriaUSB usb1;
 
-        //INPUT
+        //entrada dos dados do cliente
         System.out.println("****Seja bem vindo a loja PC Mania****");
 
         //nome
@@ -24,7 +25,7 @@ public class Main {
 
         Cliente cliente = new Cliente(nome_cliente, cpf_cliente);
 
-        //opções
+        //opções em promoção
         System.out.println();
         System.out.println("Qual promoção você deseja escolher?");
         System.out.println();
@@ -42,9 +43,11 @@ public class Main {
 
         System.out.println("Caso deseje sair do programa, digite 0");
 
+        // leitura da escolha da promoção
         Scanner scanner3 = new Scanner(System.in);
         promocao = scanner3.nextInt();
 
+        // uso do while para permitir que o cliente realize mais compras, caso queira
         while(promocao != 0 && compras <= 3){
             if(promocao == 1){
                 pc1.cliente = cliente;
